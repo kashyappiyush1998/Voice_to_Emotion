@@ -1,0 +1,17 @@
+<html>
+<head>
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('.static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div style="padding-left: 34%;">
+    <h1 style="padding-left: 2%; padding-bottom: 2%;">Voice Emotion Predictor</h1>
+    <div>
+        <input type="file" id="input-voice" accept="audio/*">
+        <button type="button" id="get-emotion">Predict Emotion</button>
+    </div>
+    <h2 id="emotion-text"></h2>
+    </div>
+</body>
+</html>
